@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Baloo Bhaijaan 2', cursive;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Playfair Display', serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #222;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 100px;
+  grid-auto-flow: dense;
+  grid-gap: 10px;
+  margin: 30px;
+}
+
+.containerGallery {
+  width: 100%;
+  height: 100%;
+  position: relative; /******************/
+}
+
+.containerImage {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /******************/
+}
+
+.containerImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.4s;
+}
+
+.containerGallery:hover img {
+  opacity: .6;
+  transform: scale(1.1);
+}
+
+.containerText {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: .4s;
+}
+
+.containerGallery:hover .containerText {
+  bottom: 50%;
+  transform: translate(-50%, 0);
+  opacity: 1;
+}
+
+
+.AG1 {
+  grid-row: span 4;
+  grid-column: span 1;
+}
+
+.AG2 {
+  grid-row: span 3;
+  grid-column: span 1;
+}
+
+.AG3 {
+  grid-row: span 4;
+  grid-column: span 1;
+}
+
+.AG4 {
+  grid-row: span 3;
+  grid-column: span 1;
+}
+
+.AG5 {
+  grid-row: span 4;
+  grid-column: span 1;
+}
+
+.AG6 {
+  grid-row: span 3;
+  grid-column: span 1;
+}
+
+.AG7 {
+  grid-row: span 5;
+  grid-column: span 1;
+}
+
+.AG8 {
+  grid-row: span 4;
+  grid-column: span 1;
+}
+
+.AG9 {
+  grid-row: span 3;
+  grid-column: span 1;
+}
+
+.AG3img {
+  object-position: top;
+}
+
+.AG6img {
+  object-position: top;
+}
